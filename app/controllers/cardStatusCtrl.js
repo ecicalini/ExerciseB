@@ -1,14 +1,10 @@
-app.controller("cardStatusCtrl", function($scope) {
-	$scope.cardStatus = cardStatus;
+app.controller("cardStatusCtrl", function($scope, $log, $location, cardStatusService) {
+	var contextPath = $location.protocol() + "://" + $location.host() + ":" + $location.port();
+	console.log("=== ", contextPath);
+	console.log("=== ", $location.path());
+	cardStatusService.getData(contextPath + '/api/data/trend').then(function(trend){
+		console.log("=== ", trend);
+		$scope.cardStatus = trend.data;
+		$log.info($scope.cardStatus);
+	});
 });
-
-var cardStatus ={
-		"type": "loweance",
-		"trend": {
-			"average": 0.38403843878768384,
-			"total": 67634,
-			"week": 974,
-			"l_week": 0.2068530241958797,
-			"l_w_t": "+"
-		}
-};

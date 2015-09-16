@@ -1,4 +1,4 @@
-# ExerciseA
+# ExerciseB
 
 $npm install
 
