@@ -1,0 +1,28 @@
+{
+  "name": "ExerciseA",
+  "version": "0.0.0",
+  "description": "CardStatus badge",
+  "main": "CardStatusApp",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "cardstatus",
+    "exerciseA"
+  ],
+  "authors": [
+    "Elena Cicalini"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.5",
+    "font-awesome": "fontawesome#~4.4.0"
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="cardStatusApp">
+<head>
+	<meta charset="UTF-8">
+	<title>CardStatus</title>
+	<link rel="stylesheet" href="../views/css/custom.css">
+	<link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+	<script src="../../bower_components/angular/angular.js"></script>
+</head>
+<body>
+
+<div class="card" ng-controller="cardStatusCtrl">
+	<div class="card-average">{{cardStatus.trend.average * 100 | number:0}}<span class="average-percent">%</span></div>
+	<div class="card-details">
+		<div class="detail-row bold-text card-type"><span class="detail-cell">{{cardStatus.type}}</span></div>
+		<div class="detail-row"><span class="detail-cell cell-label">Total: </span><span class="detail-cell bold-text cell-span"> {{cardStatus.trend.total}}</span><span class="detail-cell cell-um">tr.</span></div>
+		<div class="detail-row"><span class="detail-cell cell-label">Week: </span><span class="detail-cell bold-text cell-span">{{cardStatus.trend.week}}</span><span class="detail-cell cell-um">tr.</span></div>
+		<div class="detail-row">
+			<span class="detail-cell cell-label">
+				<i ng-class="{'fa fa-sort-asc card-last-week-up' : cardStatus.trend.l_w_t === '+',
+							  'fa fa-sort-desc card-last-week-down' : cardStatus.trend.l_w_t === '-'
+							 }"></i>
+				<span  ng-class="{'bold-text card-last-week-up' : cardStatus.trend.l_w_t === '+',
+								  'bold-text card-last-week-down' : cardStatus.trend.l_w_t === '-'
+								 }">{{cardStatus.trend.l_week * 100 | number:0}}%</span>
+			</span>
+			<span class="detail-cell cell-span"> on last week</span>
+		</div>
+	</div>
+</div>
+
+<script src="../cardStatusApp.js"></script>
+<script src="../controllers/cardStatusCtrl.js"></script>
+
+</body>
+</html>
