@@ -7,32 +7,39 @@ body {
 	border-radius: 13px 13px 13px 13px;
 	-moz-border-radius: 13px 13px 13px 13px;
 	-webkit-border-radius: 13px 13px 13px 13px;
-	/* 	border: 1px solid #b8b8b8; */
 	-webkit-box-shadow: 1px 1px 30px 3px rgba(0, 0, 0, 0.06);
 	-moz-box-shadow: 1px 1px 30px 3px rgba(0, 0, 0, 0.06);
 	box-shadow: 1px 1px 30px 3px rgba(0, 0, 0, 0.06);
 }
 
 .card-average {
-	display: table-cell;
-	vertical-align: middle;
-	padding: 2px;
-	color: whitesmoke;
-	background-color: #4BC1A1;
-	font-size: xx-large;
-	font-weight: bolder;
-	border-radius: 13px 0px 0px 13px;
-	-moz-border-radius: 13px 0px 0px 13px;
-	-webkit-border-radius: 13px 0px 0px 13px;
-/* 	border: 1px solid #b8b8b8; */
-	text-shadow: 3px 3px 7px rgba(150, 150, 150, 1);
+    display: table-cell;
+    vertical-align: middle;
+    padding: 2px;
+    color: whitesmoke;
+    background-color: #4BC1A1;
+    font-size: xx-large;
+    font-weight: bolder;
+    border-radius: 13px 0px 0px 13px;
+    -moz-border-radius: 13px 0px 0px 13px;
+    -webkit-border-radius: 13px 0px 0px 13px;
+    /* border: 1px solid #b8b8b8; */
+    text-shadow: 3px 3px 7px rgba(150, 150, 150, 1);
+    width: 65px;
+    text-align: -webkit-center;
 }
 
 .average-percent {
 	font-size: smaller;
 }
 
-.card-details, .detail-cell {
+.card-details {
+	display: table-cell;
+	padding: 2px 2px 2px 10px;
+	width: 185px;
+}
+
+.detail-cell {
 	display: table-cell;
 	padding: 2px 2px 2px 10px;
 }
@@ -69,4 +76,20 @@ body {
 
 .cell-um {
 	padding: 0px;
+}
+
+.cards-container{
+	width: 55%;
+}
+
+.cards-row{
+	display: -webkit-inline-box;
+	display: -ms-inline-box;
+	display: -moz-inline-box;
+	display: -o-inline-box;
+}
+
+.cards-cell{
+	display: table-cell;
+	padding: 5px;
 }
