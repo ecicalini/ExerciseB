@@ -13,7 +13,7 @@ Unzip project ExerciseB on server root
 
 server_root_path/ExerciseA$bower install
 
-Launch http://<your_server>/ExerciseB/app/views/CardStatus.html on browser.
+Launch http://your_server/ExerciseB/app/views/CardStatus.html on browser.
  
 The page automatically reload data every 3 seconds.
 
