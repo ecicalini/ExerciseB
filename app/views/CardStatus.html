@@ -10,7 +10,7 @@
 <body>
 
 <h3>Ranking</h3>
-<div class="cards-container" ng-controller="cardStatusCtrl">
+<div class="cards-container" ng-controller="cardCtrl">
 	<div class="cards-row" ng-repeat="card in cardStatus | orderBy: '-trend.average'" >
 		<div class="cards-cell">
 			<card-status></card-status>
