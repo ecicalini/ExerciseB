@@ -16,8 +16,8 @@ app.get('/ExerciseB*', function(req, res) {
 	res.sendFile(req.url, { root: path.join(__dirname, '../') }); 
 });
 //--------------------------------------------------------------------------
-</pre>
 </code>
+</pre>
 
 and install web application dependecy
 
@@ -29,8 +29,8 @@ bower validate      1.4.6 against git://github.com/angular/bower-angular.git#~1.
 bower install       angular#1.4.6
 
 angular#1.4.6 bower_components/angular
-</pre>
 </code>
+</pre>
 
 #Run the WebApp
 
