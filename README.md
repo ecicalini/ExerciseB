@@ -1,5 +1,9 @@
 A simple web application that ranking last week trend of a set of products.
 
+#Dependency
+
+* angularjs, available on bower.
+
 #Installation
 
 Deploy the web application in server root and add following route in file app/index.js:
@@ -15,9 +19,7 @@ app.get('/ExerciseB*', function(req, res) {
 </pre>
 </code>
 
-#Dependency
-
-* angularjs, available on bower.
+and install web application dependecy
 
 <pre>
 <code>
