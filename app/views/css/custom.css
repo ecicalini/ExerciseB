@@ -40,7 +40,7 @@ body {
 }
 
 .card-details {
-	padding: 13px 2px 13px 85px;
+    padding: 13px 2px 13px 85px;
     width: 12rem;
     position: relative;
 }
@@ -89,7 +89,7 @@ body {
 }
 
 .cards-container{
-	width: 60%;
+	width: 100%;
 }
 
 card-details{
