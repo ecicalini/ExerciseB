@@ -26,8 +26,8 @@ body {
     -webkit-border-radius: 13px 0px 0px 13px;
     text-shadow: 3px 3px 7px rgba(150, 150, 150, 1);
     width: 5rem;
-    line-height: 7rem;
-    text-align: -webkit-center;
+    line-height: 114px;
+    text-align: center;
     position: absolute;
 }
 
